@@ -19,7 +19,6 @@
   
   .flex-column-div {
     flex-direction: column;
-    position: fixed;
   }
   
   .flex-row-div {
