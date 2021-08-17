@@ -1,0 +1,129 @@
+.page-header {
+    text-align: center;
+    background-color: #1d1d1d;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .item {
+    width: 56%;
+    overflow: visible;
+    stroke: #d8d8d8;
+    stroke-width: 1;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+  }
+  
+  .flex-column-div {
+    flex-direction: column;
+    position: fixed;
+  }
+  
+  .flex-row-div {
+    flex-direction: row;
+  }
+  
+  .flex-div {
+    display: flex;
+  }
+  
+  .center-div {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .base-text {
+    font-family: poppins;
+    color: #d8d8d8;
+    text-align: center
+  }
+  
+  .header-sub-text {
+    font-size: 25px;;
+  }
+  
+  .header-sub-text-larger {
+    font-size: 30px;
+    font-weight: 500;
+  }
+  
+  .flip {
+    margin: 0 9px;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+  }
+  
+  .social-link-ul {
+    width: 130px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    padding: 10px 0;
+    background: rgba(51, 51, 51, 0.2);
+    border-radius: 10px;
+  }
+  
+  .social-link-container {
+      position: absolute;
+      bottom: 0;
+      margin-bottom: 50px;
+  }
+  
+  .social-link-item {
+    background: #1b1b1b;
+    border-radius: 10%;
+    margin: 0 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-link-icon {
+    width: 90%;
+    height: 90%;
+    fill: rgb(255, 255, 255);
+  }
+  
+  
+  @media screen and (max-width: 500px){
+    .item {
+      width: 40%;
+      transition: 0.8s all ease;
+    }
+  
+    .header-sub-text {
+      font-size: 15px;
+    }
+    
+    .flip {
+      margin: 0 6px;
+    }
+  
+    .header-sub-text-larger {
+      font-size: 20px;
+      font-weight: 500;
+      transition: 0.8s all ease;
+    }
+  }
+  
+  @media screen and (min-width: 500px){
+    .item {
+      width: 56%;
+      transition: 0.8s all ease;
+    }
+  }
