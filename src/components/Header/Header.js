@@ -64,7 +64,7 @@ const Header = () => {
   ];
 
     return (
-        <div className="page-header">
+        <div className="page-container page-header">
       <div>
           <motion.svg
               xmlns="http://www.w3.org/2000/svg"
@@ -85,21 +85,21 @@ const Header = () => {
       </div>
       <div className="center-div flex-div flex-column-div">
         <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{delay:4}} >
-          <Typical className="base-text header-sub-text-larger"
+          <Typical className="base-text center-text header-sub-text-larger"
             steps={[4000, 'VENKATA BOMMIREDDIPALLI']}
             loop={1}
             wrapper="h1"
           />
         </motion.div>
         <motion.div className="center-div flex-div flex-row-div" initial={{opacity:0}} animate={{opacity:1}} transition={{delay:6.7}} >
-            <p className="base-text header-sub-text">I am a </p>
+            <p className="base-text center-text header-sub-text">I am a </p>
             <TextTransition className="flip base-text header-sub-text"
             text={ TEXTS[index % TEXTS.length] }
             springConfig={presets.gentle}
               inline
               overflow
             />
-          <p className="base-text header-sub-text">developer.</p>
+          <p className="base-text center-text header-sub-text">developer.</p>
         </motion.div>
       </div>
 

@@ -1,0 +1,54 @@
+.page-container {
+  background-color: #1d1d1d;
+}
+
+.App {
+  background-color: #1d1d1d;
+}
+
+.center-text {
+  text-align: center
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.base-text {
+  font-family: poppins;
+  color: #d8d8d8;
+}
+
+.center-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-header-text {
+  font-size: 60px;
+  margin: 0 100px;
+  font-weight: 500;
+  border-width: 0 0 5px 0;
+  border-style: solid;
+  border-image: linear-gradient(to right, red, blue) 27;
+}
+
+@media screen and (max-width: 950px){
+  .section-header-text {
+      font-size: 40px;
+      font-weight: 500;
+      margin: 0 40px;
+      transition: 0.8s all ease;
+  }
+}
+
+@media screen and (max-width: 650px){
+  .section-header-text {
+      font-size: 30px;
+      margin: 0 20px;
+      font-weight: 500;
+      transition: 0.8s all ease;
+  }
+}
