@@ -4,6 +4,40 @@
     font-size: 17px;
 }
 
+.professional-experience-text-container{
+    width: 70%;
+}
+
+.timeline-paper {
+    padding: 5px 20px;
+    background-color: #d7d7d7;
+}
+
+.timeline-container {
+    margin: auto;
+    width: 30%;
+}
+
+.modal {
+    width: 600px;
+}
+
+@media screen and (max-width: 800px){
+    .professional-experience-container {
+        flex-direction: column;
+    }
+    
+    .timeline-container {
+        width: 100%;
+        transition: 0.8s all ease;
+    }
+
+    .professional-experience-text-container{
+        width: 100%;
+        transition: 0.8s all ease;
+    }
+}
+
 @media screen and (max-width: 950px){
     .professional-experience-container {
         margin: 10px 40px 0 40px;
