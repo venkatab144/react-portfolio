@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 
 const ProfessionalExperience = () => {
     return (
-        <div className="page-container">
+        <div className="page-container" id="prof-exp-link">
             <h1 className="base-text section-header-text center-text">Professional Experience</h1>
             <div className="professional-experience-container flex-row base-text">
                 <div className="professional-experience-text-container">

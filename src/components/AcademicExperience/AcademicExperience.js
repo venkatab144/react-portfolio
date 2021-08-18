@@ -47,7 +47,7 @@ const AcademicExperience = () => {
     const currentSubjects = ["Engineering Capstone", "Engineering Practice Reflection 2", "Network Fundamentals"]
 
     return (
-        <div className="page-container">
+        <div className="page-container" id="academic-exp-link">
             <h1 className="base-text section-header-text center-text">Academic Experience</h1>
             <div className="academic-experience-container flex-row base-text">
                 <div className="academic-experience-paper-container">

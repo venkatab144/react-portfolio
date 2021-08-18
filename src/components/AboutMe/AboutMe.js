@@ -77,7 +77,7 @@ const AboutMe = () => {
     ]
 
     return (
-        <div className="about-me-page-container page-container">
+        <div className="about-me-page-container page-container" id="about-link">
             <h1 className="base-text section-header-text center-text">About Me</h1>
             <div className="about-me-container center-div base-text">
                 <div className="about-me-text-container">

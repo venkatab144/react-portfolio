@@ -64,7 +64,7 @@ const Header = () => {
   ];
 
     return (
-        <div className="page-container page-header">
+        <div className="page-container page-header" id="header-link">
       <div>
           <motion.svg
               xmlns="http://www.w3.org/2000/svg"
