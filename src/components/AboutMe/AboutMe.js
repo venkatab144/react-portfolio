@@ -5,7 +5,6 @@ import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
 import { SiCsharp, SiPython, SiCplusplus, SiReact, SiJava, SiC } from "react-icons/si";
 import { AiFillDatabase } from "react-icons/ai";
 import { DiJavascript1 } from "react-icons/di";
-import Fade from 'react-reveal/Fade';
 
 const AboutMe = () => {
     const [openChild, setOpenChild] = useState(null);
@@ -78,28 +77,26 @@ const AboutMe = () => {
     ]
 
     return (
-        <Fade bottom>
-            <div className="about-me-page-container page-container">
-                <h1 className="base-text section-header-text center-text">About Me</h1>
-                <div className="about-me-container center-div base-text">
-                    <div className="about-me-text-container">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet urna quis augue ornare feugiat sit amet sit amet tellus. Fusce eget porttitor diam, a feugiat lectus. Fusce sed nisl tincidunt, hendrerit odio a, venenatis lorem. Sed tincidunt libero ac sapien malesuada tempor. Phasellus libero nibh, convallis vitae pharetra quis, suscipit eu dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec ac tincidunt velit, nec scelerisque ex.</p>
-                        <br/>
-                        <p>Maecenas semper nisi sed lobortis condimentum. Vestibulum imperdiet dui non elementum semper. Nam ornare ac augue sit amet ornare. Donec luctus consectetur consectetur. Vestibulum ante quam, dignissim sed sem sed, eleifend scelerisque erat. Sed et dignissim urna. Donec quis diam tortor. Suspendisse potenti. Ut viverra, diam ac ultricies blandit, ante nunc congue orci, accumsan laoreet felis odio et mi. In hac habitasse platea dictumst. Cras lacinia fringilla viverra. Quisque nulla neque, hendrerit quis ipsum ut, faucibus bibendum odio. Aenean faucibus rhoncus lacus, vitae volutpat tellus vulputate facilisis. Etiam sed risus dui. Nunc tincidunt vulputate efficitur.</p>
-                    </div>
-                    <div className="about-me-interactive-container">
-                        <p className="info-text">Click icons to expand.</p>
-                        <AnimateSharedLayout>
-                            <motion.ul layout>
-                                {items.map(item => (
-                                <Item childIdent={item.id} key={item.id} icon={item.icon} text={item.text} onChildOpen={onChildOpen} openChild={openChild}/>
-                                ))}
-                            </motion.ul>
-                        </AnimateSharedLayout>
-                    </div>
+        <div className="about-me-page-container page-container">
+            <h1 className="base-text section-header-text center-text">About Me</h1>
+            <div className="about-me-container center-div base-text">
+                <div className="about-me-text-container">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet urna quis augue ornare feugiat sit amet sit amet tellus. Fusce eget porttitor diam, a feugiat lectus. Fusce sed nisl tincidunt, hendrerit odio a, venenatis lorem. Sed tincidunt libero ac sapien malesuada tempor. Phasellus libero nibh, convallis vitae pharetra quis, suscipit eu dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec ac tincidunt velit, nec scelerisque ex.</p>
+                    <br/>
+                    <p>Maecenas semper nisi sed lobortis condimentum. Vestibulum imperdiet dui non elementum semper. Nam ornare ac augue sit amet ornare. Donec luctus consectetur consectetur. Vestibulum ante quam, dignissim sed sem sed, eleifend scelerisque erat. Sed et dignissim urna. Donec quis diam tortor. Suspendisse potenti. Ut viverra, diam ac ultricies blandit, ante nunc congue orci, accumsan laoreet felis odio et mi. In hac habitasse platea dictumst. Cras lacinia fringilla viverra. Quisque nulla neque, hendrerit quis ipsum ut, faucibus bibendum odio. Aenean faucibus rhoncus lacus, vitae volutpat tellus vulputate facilisis. Etiam sed risus dui. Nunc tincidunt vulputate efficitur.</p>
+                </div>
+                <div className="about-me-interactive-container">
+                    <p className="info-text">Click icons to expand.</p>
+                    <AnimateSharedLayout>
+                        <motion.ul layout>
+                            {items.map(item => (
+                            <Item childIdent={item.id} key={item.id} icon={item.icon} text={item.text} onChildOpen={onChildOpen} openChild={openChild}/>
+                            ))}
+                        </motion.ul>
+                    </AnimateSharedLayout>
                 </div>
             </div>
-            </Fade>
+        </div>
     )
 }
 
