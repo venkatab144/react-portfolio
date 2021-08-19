@@ -32,25 +32,19 @@ const ProfessionalExperience = () => {
                     <Timeline align="alternate">
                         <TimelineItem>
                             <TimelineOppositeContent>
-                                <p>OPP1</p>
+                                <p>2014-2014</p>
                             </TimelineOppositeContent>
                             <TimelineSeparator>
                                 <TimelineDot />
                                 <TimelineConnector />
                             </TimelineSeparator>
                             <TimelineContent>
-                                <Popup modal trigger={<Paper elevation={3} className="timeline-paper"><p>CON1</p></Paper>} position="right center">
-                                    <motion.div initial={{opacity:0, scaleX:0}} animate={{opacity:1, scaleX:1}} exit={{opacity:0, scaleX:0}}>
-                                        <Paper elevation={3} className="timeline-paper modal">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet urna quis augue ornare feugiat sit amet sit amet tellus. Fusce eget porttitor diam, a feugiat lectus. Fusce sed nisl tincidunt, hendrerit odio a, venenatis lorem.</p>
-                                        </Paper>
-                                    </motion.div>
-                                </Popup>
+                                <Paper elevation={3} className="timeline-paper"><p>WiseTech Global (WTG): Work Experience</p></Paper>
                             </TimelineContent>
                         </TimelineItem>
                         <TimelineItem>
                             <TimelineOppositeContent>
-                                <p>OPP2</p>
+                                <p>Nov 2016 - Nov 2016</p>
                             </TimelineOppositeContent>
                             <TimelineSeparator>
                                 <TimelineDot />
@@ -58,13 +52,13 @@ const ProfessionalExperience = () => {
                             </TimelineSeparator>
                             <TimelineContent>
                                 <Paper elevation={3} className="timeline-paper">
-                                    <p>CON2</p>
+                                    <p>Dominos: In-Store Staff</p>
                                 </Paper>
                             </TimelineContent>
                         </TimelineItem>
                         <TimelineItem>
                             <TimelineOppositeContent>
-                                <p>OPP3</p>
+                                <p>Nov 2016</p>
                             </TimelineOppositeContent>
                             <TimelineSeparator>
                                 <TimelineDot />
@@ -72,13 +66,13 @@ const ProfessionalExperience = () => {
                             </TimelineSeparator>
                             <TimelineContent>
                                 <Paper elevation={3} className="timeline-paper">
-                                    <p>CON3</p>
+                                    <p>WTG: Software Engineer, Team: DPIB</p>
                                 </Paper>
                             </TimelineContent>
                         </TimelineItem>
                         <TimelineItem>
                             <TimelineOppositeContent>
-                                <p>OPP4</p>
+                                <p>Mar 2017</p>
                             </TimelineOppositeContent>
                             <TimelineSeparator>
                                 <TimelineDot />
@@ -86,21 +80,60 @@ const ProfessionalExperience = () => {
                             </TimelineSeparator>
                             <TimelineContent>
                                 <Paper elevation={3} className="timeline-paper">
-                                    <p>CON4</p>
+                                    <p>Started University - UTS</p>
                                 </Paper>
                             </TimelineContent>
                         </TimelineItem>
                         <TimelineItem>
                             <TimelineOppositeContent>
-                                <p>OPP5</p>
+                                <p>Apr 2017</p>
+                            </TimelineOppositeContent>
+                            <TimelineSeparator>
+                                <TimelineDot />
+                                <TimelineConnector />
+                            </TimelineSeparator>
+                            <TimelineContent>
+                                <Paper elevation={3} className="timeline-paper">
+                                    <p>WTG - Customs</p>
+                                </Paper>
+                            </TimelineContent>
+                        </TimelineItem>
+                        <TimelineItem>
+                            <TimelineOppositeContent>
+                                <p>Aug 2017</p>
+                            </TimelineOppositeContent>
+                            <TimelineSeparator>
+                                <TimelineDot />
+                                <TimelineConnector />
+                            </TimelineSeparator>
+                            <TimelineContent>
+                                <Paper elevation={3} className="timeline-paper">
+                                    <p>WTG - CORE</p>
+                                </Paper>
+                            </TimelineContent>
+                        </TimelineItem>
+                        <TimelineItem>
+                            <TimelineOppositeContent>
+                                <p>Mar 2019</p>
+                            </TimelineOppositeContent>
+                            <TimelineSeparator>
+                                <TimelineDot />
+                                <TimelineConnector />
+                            </TimelineSeparator>
+                            <TimelineContent>
+                                <Paper elevation={3} className="timeline-paper">
+                                    <p>WTG - CRM</p>
+                                </Paper>
+                            </TimelineContent>
+                        </TimelineItem>
+                        <TimelineItem>
+                            <TimelineOppositeContent>
+                                <p>Present</p>
                             </TimelineOppositeContent>
                             <TimelineSeparator>
                                 <TimelineDot />
                             </TimelineSeparator>
                             <TimelineContent>
-                                <Paper elevation={3} className="timeline-paper">
-                                    <p>CON5</p>
-                                </Paper>
                             </TimelineContent>
                         </TimelineItem>
                     </Timeline>

@@ -10,7 +10,10 @@
 
 .timeline-paper {
     padding: 5px 20px;
-    background-color: #d7d7d7;
+    font-size: 13px;
+    text-align:center;
+    color: #d8d8d8 !important;
+    background-color: #2b2a2a !important;
 }
 
 .timeline-container {
@@ -22,7 +25,7 @@
     width: 600px;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1550px){
     .professional-experience-container {
         flex-direction: column;
     }
@@ -49,6 +52,14 @@
     .professional-experience-container {
         margin: 10px 20px 0 20px;
         font-size: 12px;
+        transition: 0.8s all ease;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .timeline-paper {
+        font-size: 10px;
+        padding: 5px 10px;
         transition: 0.8s all ease;
     }
 }
