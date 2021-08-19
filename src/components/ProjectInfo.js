@@ -35,7 +35,7 @@ export const AcademicProjects = {
             {
                 id: 13,
                 title: "Software Studio 1A - Fitness App",
-                body: "In Software Studio 1A, our team developed a Fitness Android app. The app had various features such as the run tracker which tracked the user running path as well as time and other details. In addition to this I developed the save feature which saved all the data as a packet to a Google Drive and also displayed it."
+                body: "In Software Studio 1A, our team developed a Fitness Android app. The app had various features such as the run tracker which tracked the user running path as well as time and other details. In addition to this I developed the save feature which saved all the data as a packet to a Google Drive and also displayed"
             },
         ]
 }
@@ -47,22 +47,22 @@ export const ProfessionalProjects = {
             {
                 id: 15,
                 title: "Crikey: Internal DevTools Website",
-                body: "Maecenas semper nisi sed lobortis condimentum. Vestibulum imperdiet dui non elementum semper. Nam ornare ac augue sit amet ornare. Donec luctus consectetur consectetur. Vestibulum ante quam, dignissim sed sem sed, eleifend scelerisque erat. Sed et dignissim urna. Donec quis diam tortor. Suspendisse potenti. Ut viverra, diam ac ultricies blandit, ante nunc congue orci, accumsan laoreet felis odio et mi. In hac habitasse platea dictumst. Cras lacinia fringilla viverra. Quisque nulla neque, hendrerit quis ipsum ut, faucibus bibendum odio. Aenean faucibus rhoncus lacus, vitae volutpat tellus vulputate facilisis. Etiam sed risus dui. Nunc tincidunt vulputate efficitur."
+                body: "While in DPIB, I was working on an internal company website that would be used by developers. The purpose of this website was to display the status and results of DAT (Distributed Auto Tester - an automated system that ran all unit tests on pull requests/TFS shelvesets to identify and functionality breakages) runs. Every time the user submitted a PR or TFS Shelveset the website would display the number of tests run, tests failed, etc... The website was built with a React.js front-end, C# .NET backend and MSSQL for database management."
             },
             {
                 id: 17,
                 title: "Customs Software Development",
-                body: "Maecenas semper nisi sed lobortis condimentum. Vestibulum imperdiet dui non elementum semper. Nam ornare ac augue sit amet ornare. Donec luctus consectetur consectetur. Vestibulum ante quam, dignissim sed sem sed, eleifend scelerisque erat. Sed et dignissim urna. Donec quis diam tortor. Suspendisse potenti. Ut viverra, diam ac ultricies blandit, ante nunc congue orci, accumsan laoreet felis odio et mi. In hac habitasse platea dictumst. Cras lacinia fringilla viverra. Quisque nulla neque, hendrerit quis ipsum ut, faucibus bibendum odio. Aenean faucibus rhoncus lacus, vitae volutpat tellus vulputate facilisis. Etiam sed risus dui. Nunc tincidunt vulputate efficitur."
+                body: "In Customs, I worked on the software within our product that was responsible for handling all Customs logic and functionality within our product. In this team I developed several new features and implemented bug fixes to improve the product."
             },
             {
                 id: 19,
                 title: "CORE Architecture Development",
-                body: "Maecenas semper nisi sed lobortis condimentum. Vestibulum imperdiet dui non elementum semper. Nam ornare ac augue sit amet ornare. Donec luctus consectetur consectetur. Vestibulum ante quam, dignissim sed sem sed, eleifend scelerisque erat. Sed et dignissim urna. Donec quis diam tortor. Suspendisse potenti. Ut viverra, diam ac ultricies blandit, ante nunc congue orci, accumsan laoreet felis odio et mi. In hac habitasse platea dictumst. Cras lacinia fringilla viverra. Quisque nulla neque, hendrerit quis ipsum ut, faucibus bibendum odio. Aenean faucibus rhoncus lacus, vitae volutpat tellus vulputate facilisis. Etiam sed risus dui. Nunc tincidunt vulputate efficitur."
+                body: "In CORE, I worked with low-level development of the framework that supports our flaship product 'CargoWise One' I worked on various bug fixes and on the development of various new features for the product using primarily C# and SQL."
             },
             {
                 id: 21,
                 title: "CRM Software Development",
-                body: "Maecenas semper nisi sed lobortis condimentum. Vestibulum imperdiet dui non elementum semper. Nam ornare ac augue sit amet ornare. Donec luctus consectetur consectetur. Vestibulum ante quam, dignissim sed sem sed, eleifend scelerisque erat. Sed et dignissim urna. Donec quis diam tortor. Suspendisse potenti. Ut viverra, diam ac ultricies blandit, ante nunc congue orci, accumsan laoreet felis odio et mi. In hac habitasse platea dictumst. Cras lacinia fringilla viverra. Quisque nulla neque, hendrerit quis ipsum ut, faucibus bibendum odio. Aenean faucibus rhoncus lacus, vitae volutpat tellus vulputate facilisis. Etiam sed risus dui. Nunc tincidunt vulputate efficitur."
+                body: "My current team is CRM. In CRM I focus on implementing features for our Commission system and Marketing Manager system. I have specifically focused a lot more on the Commission system which is currently under the process of being overhauled. I work directly with our Sales team and our Clients in order to rectify issues and implement features that they request."
             }
         ]
 }
