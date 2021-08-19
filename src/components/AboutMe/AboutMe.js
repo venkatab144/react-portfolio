@@ -71,9 +71,15 @@ const AboutMe = () => {
             <div className="flex-column center-div base-text">
                 <div className="about-me-container center-div base-text">
                     <div className="about-me-text-container">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet urna quis augue ornare feugiat sit amet sit amet tellus. Fusce eget porttitor diam, a feugiat lectus. Fusce sed nisl tincidunt, hendrerit odio a, venenatis lorem. Sed tincidunt libero ac sapien malesuada tempor. Phasellus libero nibh, convallis vitae pharetra quis, suscipit eu dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec ac tincidunt velit, nec scelerisque ex.</p>
+                        <p>Hi, my name is Venkata Bommireddipalli and I'm a Software Engineer working at WiseTech Global. I am also a uni student in my 5th and final year enrolled in the Bachelor of Engineering (Hon.), Majoring in Software, with a Diploma in Professional Engineering Practice. In addition, I have completed my submajor in Data Analytics focusing more on the Machine Learning/Artificial Intelligence subjects.</p>
                         <br/>
-                        <p>Maecenas semper nisi sed lobortis condimentum. Vestibulum imperdiet dui non elementum semper. Nam ornare ac augue sit amet ornare. Donec luctus consectetur consectetur. Vestibulum ante quam, dignissim sed sem sed, eleifend scelerisque erat. Sed et dignissim urna. Donec quis diam tortor. Suspendisse potenti. Ut viverra, diam ac ultricies blandit, ante nunc congue orci, accumsan laoreet felis odio et mi. In hac habitasse platea dictumst. Cras lacinia fringilla viverra. Quisque nulla neque, hendrerit quis ipsum ut, faucibus bibendum odio. Aenean faucibus rhoncus lacus, vitae volutpat tellus vulputate facilisis. Etiam sed risus dui. Nunc tincidunt vulputate efficitur.</p>
+                        <p>I am a passionate and determined individual that has extensive professional experience developing and maintaining a range of projects such as an internal company website (using a full react, node.js, C# and SQL stack) as well as Enterprise Level Applications used by hundreds of companies.</p>
+                        <br/>
+                        <p>Throughout my studies at university I have had the opportunity to work on various different projects including; developing Android apps and websites, and creating Neural Networks for Objected Detection and Classification. I am currently doing my Capstone Project: Underwater Coral Detection and Classification Using Deep Learning.</p>
+                        <br/>
+                        <p>My professional and academic experiences have allowed me to gain a significant amount of experience in a vast variety of technologies, frameworks and languages. My knowledge extends to; web, Enterprise Software, Android and Machine Learning development. </p>
+                        <br/>
+                        <p>I enjoy working on challenging tasks and don't mind using various different technologies to create a solution. I am open to working with, and learning new frameworks, technologies or languages and am an enthusiastic learner. If you want to work with me, please contact me.</p>
                     </div>
                     <div className="about-me-interactive-container">
                         <p className="info-text">Click icons to expand.</p>
