@@ -61,6 +61,29 @@
     font-size: 12px;
 }
 
+.pdf-page {
+    margin: 10px;
+}
+
+.base-button {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background: #292929;
+}
+
+.base-button:hover {
+    background: #444444;
+}
+
+@media screen and (max-width: 1300px){
+    .pdf-doc {
+        display: flex;
+        flex-direction: column;
+        transition: 0.8s all ease;
+    }
+}
+
 @media screen and (max-width: 1150px){
     .about-me-container {
         display: flex;

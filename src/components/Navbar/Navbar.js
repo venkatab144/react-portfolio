@@ -48,7 +48,6 @@ function NavbarContent({ smallMenu }) {
         <NavbarItem smallMenu={smallMenu} text={"PROFESSIONAL EXPERIENCE"} linkId={"prof-exp-link"}/>
         <NavbarItem smallMenu={smallMenu} text={"ACADEMIC EXPERIENCE"} linkId={"academic-exp-link"}/>
         <NavbarItem smallMenu={smallMenu} text={"PROJECTS"} linkId={"projects-link"}/>
-        <NavbarItem smallMenu={smallMenu} text={"CONTACT ME"} linkId={"projects-link"}/>
       </div>
     );
   }
