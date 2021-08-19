@@ -4,8 +4,8 @@ import AcademicExperience from './components/AcademicExperience/AcademicExperien
 import Header from './components/Header/Header';
 import ProfessionalExperience from './components/ProfessionalExperience/ProfessionalExperience';
 import Projects from './components/Projects/Projects';
-import Fade from 'react-reveal/Fade';
 import Navbar from './components/Navbar/Navbar';
+import ContactMe from './components/ContactMe/ContactMe';
 
 function App() {
   return (
@@ -13,10 +13,11 @@ function App() {
       <div className="site-container">
         <Navbar />
         <Header />
-        <AboutMe /> {/*Maybe put Resume here*/}
+        <AboutMe />
         <ProfessionalExperience />
         <AcademicExperience />
         <Projects />
+        <ContactMe />
         {/*Contact
         Footer */}
       </div>

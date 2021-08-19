@@ -49,7 +49,7 @@
     display: none;
 }
 
-@media screen and (max-width: 780px){
+@media screen and (max-width: 963px){
     .navbar-content-container {
         display: none;
     }
@@ -57,7 +57,7 @@
     .navbar-content-container-burger {
         display: flex;
         flex-direction: column;
-        transition: 0.8s all ease;
+        transition: 0.2s all ease;
     }
 
     .navbar-container {
@@ -68,12 +68,12 @@
         right: 0;
         flex-direction: column;
         background-color: #141414;
-        transition: 0.8s all ease;
+        transition: 0.2s all ease;
     }
 
     .burger {
         display: block;
-        transition: 0.8s all ease;
+        transition: 0.2s all ease;
     }
 }
 

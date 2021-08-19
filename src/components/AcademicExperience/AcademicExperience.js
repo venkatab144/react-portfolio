@@ -1,5 +1,4 @@
 import Paper from '@material-ui/core/Paper';
-import React from 'react'
 import './AcademicExperience.css'
 import Popup from 'reactjs-popup';
 import { motion } from "framer-motion";
@@ -69,13 +68,13 @@ const AcademicExperience = () => {
                                             <h1 className="subject-header">Completed Subjects:</h1>
                                             <div className="completed-subjects-grid">
                                                 {completedSubjects.map((el, index) => (
-                                                    <p className="subject-name" id={index}>{el}</p>
+                                                    <p className="subject-name" key={index}>{el}</p>
                                                 ))}
                                             </div>
                                             <br/>
                                             <h1 className="subject-header">Current Subjects:</h1>
                                             {currentSubjects.map((el, index) => (
-                                                <p className="subject-name" id={index + completedSubjects.length}>{el}</p>
+                                                <p className="subject-name" key={index + completedSubjects.length}>{el}</p>
                                             ))}
                                         </Paper>
                                     </motion.div>

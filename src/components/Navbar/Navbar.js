@@ -18,12 +18,12 @@ const Navbar = () => {
         }
     }
 
-    const { height, width } = useWindowDimensions();
+    const { width } = useWindowDimensions();
 
     return (
         <div>
-            <div className={showMenu && "touch-detector"} onMouseDown={onOutsideTouchInteraction} onTouchStart={onOutsideTouchInteraction}></div>
-            <div className={width > 780 ? "navbar-container" : showMenu ? "navbar-container expanded" : "navbar-container"} onClick={toggleMenu}>
+            <div className={showMenu ? "touch-detector" : undefined} onMouseDown={onOutsideTouchInteraction} onTouchStart={onOutsideTouchInteraction}></div>
+            <div className={width > 963 ? "navbar-container" : showMenu ? "navbar-container expanded" : "navbar-container"} onClick={toggleMenu}>
                 <NavbarContent />
 
                 {showMenu && <NavbarContent smallMenu={true}/>}
@@ -48,6 +48,7 @@ function NavbarContent({ smallMenu }) {
         <NavbarItem smallMenu={smallMenu} text={"PROFESSIONAL EXPERIENCE"} linkId={"prof-exp-link"}/>
         <NavbarItem smallMenu={smallMenu} text={"ACADEMIC EXPERIENCE"} linkId={"academic-exp-link"}/>
         <NavbarItem smallMenu={smallMenu} text={"PROJECTS"} linkId={"projects-link"}/>
+        <NavbarItem smallMenu={smallMenu} text={"CONTACT ME"} linkId={"contact-link"}/>
       </div>
     );
   }

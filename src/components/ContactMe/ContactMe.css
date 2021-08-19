@@ -1,0 +1,93 @@
+.contact-paper {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #252525 !important;
+    color: #d8d8d8 !important;
+}
+
+.contact-me-container {
+    margin: 20px auto;
+    text-align: justify;
+    font-size: 17px;
+}
+
+.text-input {
+    background: #1d1d1d;
+    width: 400px;
+    margin: 5px;
+    padding: 15px;
+    color: #d8d8d8;
+    border-style: solid;
+    border-width: 0 0 3px 0;
+    border-color: rgb(20, 20, 20);
+}
+
+.text-input:focus {
+    border-image: linear-gradient(to right, red, blue) 27;
+}
+
+.subject-text {
+    width: 840px;
+}
+
+.submit-button {
+    background: #1d1d1d;
+}
+
+.submit-button:hover {
+    background: #131313;
+}
+
+/* Change the white to any color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active
+{
+    -webkit-box-shadow: 0 0 0 30px #1d1d1d inset !important;
+    -webkit-text-fill-color: #d8d8d8;
+}
+
+@media screen and (max-width: 1100px){
+    .text-input {
+        width: 300px;
+        transition: 0.8s all ease;
+        font-size: 12px;
+    }
+
+    .subject-text {
+        width: 640px;
+        transition: 0.8s all ease;
+    }
+}
+
+@media screen and (max-width: 780px){
+    .text-input {
+        width: 200px;
+        transition: 0.8s all ease;
+    }
+
+    .subject-text {
+        width: 440px;
+        transition: 0.8s all ease;
+    }
+}
+
+@media screen and (max-width: 540px){
+    .text-input {
+        width: 240px;
+        font-size: 10px;
+        transition: 0.8s all ease;
+    }
+
+    .name-email-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .subject-text {
+        width: 240px;
+        transition: 0.8s all ease;
+    }
+}

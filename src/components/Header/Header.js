@@ -1,5 +1,5 @@
 import './Header.css'
-import { motion, useAnimation } from "framer-motion";
+import { motion } from "framer-motion";
 import Typical from 'react-typical'
 import TextTransition, { presets } from "react-text-transition";
 import React from "react";
@@ -56,11 +56,11 @@ const Header = () => {
   };
 
   const TEXTS = [
-    " web ",
-    " full-stack ",
     " machine learning ",
     " front-end ",
     " back-end ",
+    " web ",
+    " full-stack ",
   ];
 
     return (
@@ -82,21 +82,21 @@ const Header = () => {
                 initial="hidden"
                 animate="visible"
                 transition={{
-                  default: { delay: 0.5, duration: 4, ease: "easeIn" },
-                  fill: { delay: 0.5, duration: 3, ease: [1, 0, 0.8, 1] }
+                  default: { delay: 0.5, duration: 3, ease: "easeIn" },
+                  fill: { delay: 0.5, duration: 2, ease: [1, 0, 0.8, 1] }
                 }}
               />
         </motion.svg>
       </div>
       <div className="center-div flex-div flex-column-div">
-        <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{delay:4}} >
+        <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{delay:2.5}} >
           <Typical className="base-text center-text header-sub-text-larger"
-            steps={[4000, 'VENKATA BOMMIREDDIPALLI']}
+            steps={[2500, 'VENKATA BOMMIREDDIPALLI']}
             loop={1}
             wrapper="h1"
           />
         </motion.div>
-        <motion.div className="center-div flex-div flex-row-div" initial={{opacity:0}} animate={{opacity:1}} transition={{delay:6.7}} >
+        <motion.div className="center-div flex-div flex-row-div" initial={{opacity:0}} animate={{opacity:1}} transition={{delay:3.5}} >
             <p className="base-text center-text header-sub-text">I am a </p>
             <TextTransition className="flip base-text header-sub-text"
             text={ TEXTS[index % TEXTS.length] }

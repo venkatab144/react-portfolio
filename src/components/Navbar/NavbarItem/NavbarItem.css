@@ -16,7 +16,7 @@
     border-width: 0 0 2px 0;
 }
 
-@media screen and (max-width: 780px){
+@media screen and (max-width: 963px){
     .navbar-item-container {
         display: none;
     }

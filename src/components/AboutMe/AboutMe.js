@@ -1,6 +1,6 @@
 import React from 'react'
 import './AboutMe.css'
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
 import { SiCsharp, SiPython, SiCplusplus, SiReact, SiJava, SiC } from "react-icons/si";
 import { AiFillDatabase } from "react-icons/ai";
@@ -88,8 +88,8 @@ const AboutMe = () => {
                 </div>
                 <div className="flex-column center-div">
                     <div>
-                        <button onClick={() => setShowResume(!showResume)} className="base-button base-text">{showResume ? 'Close' : 'View Resume'}</button>
-                        <button className="base-button base-text"><a className="base-text" href='./Resume.pdf' download>Download Resume</a></button>
+                        <button onClick={() => setShowResume(!showResume)} className="clickable base-button base-text">{showResume ? 'Close' : 'View Resume'}</button>
+                        <button className="base-button base-text"><a className="base-text" href='./Resume.pdf' download>Download Resume (Click Text)</a></button>
                     </div>
                     <div>
                         {showResume && <ResumeViewer width={width}/>}

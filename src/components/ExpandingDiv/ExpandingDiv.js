@@ -13,7 +13,7 @@ const ExpandingDiv = ({ info }) => {
 
     return (
         <motion.div layout onClick={toggleOpen} className="expanding-div-container">
-            <motion.div layout><h1 layout style={{borderStyle: !isOpen && 'none'}} className="base-text center-text expanding-div-header clickable">{info.header}</h1></motion.div>
+            <motion.div layout><h1 style={{borderStyle: !isOpen && 'none'}} className="base-text center-text expanding-div-header clickable">{info.header}</h1></motion.div>
             <AnimatePresence>
                 {isOpen && <Content info={info} />}
             </AnimatePresence>
@@ -32,8 +32,8 @@ function Content({ info }) {
                 {info.content.map((el, index) => (
                     <div>
                         <Paper elevation={3} className="project-paper">
-                            <h1 className="expanding-div-content-heading">{el.title}</h1>
-                            <p className="expanding-div-content-paragraph">{el.body}</p> 
+                            <h1 key={el.id} className="expanding-div-content-heading">{el.title}</h1>
+                            <p key={el.id+1} className="expanding-div-content-paragraph">{el.body}</p> 
                         </Paper>
                     </div>
                 ))}
