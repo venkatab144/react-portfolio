@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.page-container {
+  background-color: #1d1d1d;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App {
+  background-color: #1d1d1d;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.site-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.popup-overlay {
+  background-color: rgba(0, 0, 0, 0.767);
+}
+
+.center-text {
+  text-align: center
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.base-text {
+  font-family: poppins;
+  color: #d8d8d8;
+}
+
+.center-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-header-text {
+  font-size: 60px;
+  margin: 0 100px;
+  font-weight: 500;
+  border-width: 0 0 5px 0;
+  border-style: solid;
+  border-image: linear-gradient(to right, red, blue) 27;
+}
+
+@media screen and (max-width: 950px){
+  .section-header-text {
+      font-size: 40px;
+      font-weight: 500;
+      margin: 0 40px;
+      transition: 0.8s all ease;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media screen and (max-width: 650px){
+  .section-header-text {
+      font-size: 30px;
+      margin: 0 20px;
+      font-weight: 500;
+      transition: 0.8s all ease;
   }
 }

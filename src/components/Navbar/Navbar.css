@@ -1,0 +1,92 @@
+.navbar-container {
+    height: 40px;
+    position: fixed;
+    background-color: #1d1d1d;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.touch-detector {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+}
+
+.navbar-content-container {
+    height: 40px;
+    position: fixed;
+    background-color: #1d1d1d;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.navbar-container-burger {
+    display: none;
+}
+
+.navbar-content-container-burger {
+    display: none;
+}
+
+.expanded {
+    width: 300px !important;
+    height: 400px !important;
+}
+
+.burger {
+    height: 50px;
+    width: 50px;
+    display: none;
+}
+
+@media screen and (max-width: 963px){
+    .navbar-content-container {
+        display: none;
+    }
+
+    .navbar-content-container-burger {
+        display: flex;
+        flex-direction: column;
+        transition: 0.2s all ease;
+    }
+
+    .navbar-container {
+        width: 50px;
+        height: 50px;
+        margin: 15px;
+        border-radius: 10px;
+        right: 0;
+        flex-direction: column;
+        background-color: #141414;
+        transition: 0.2s all ease;
+    }
+
+    .burger {
+        display: block;
+        transition: 0.2s all ease;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .navbar-container {
+        width: 40px;
+        height: 40px;
+        transition: 0.8s all ease;
+    }
+
+    .burger {
+        height: 40px;
+        width: 40px;
+        transition: 0.8s all ease;
+    }
+}

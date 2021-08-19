@@ -1,0 +1,24 @@
+.projects-container  {
+    margin: 10px 100px 0 100px;
+    text-align: justify;
+    font-size: 17px;
+}
+
+.projects-expanding-div-container {
+    margin: 20px 0;
+}
+
+@media screen and (max-width: 950px){
+    .projects-container {
+        margin: 10px 40px 0 40px;
+        transition: 0.8s all ease;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .projects-container {
+        margin: 10px 20px 0 20px;
+        font-size: 12px;
+        transition: 0.8s all ease;
+    }
+}
