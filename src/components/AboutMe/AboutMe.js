@@ -3,8 +3,8 @@ import './AboutMe.css'
 import { useState } from "react";
 import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
 import { SiCsharp, SiPython, SiCplusplus, SiReact, SiJava, SiC } from "react-icons/si";
-import { AiFillDatabase } from "react-icons/ai";
-import { DiJavascript1 } from "react-icons/di";
+import { AiFillDatabase, AiFillGithub } from "react-icons/ai";
+import { DiJavascript1, DiAndroid } from "react-icons/di";
 import { useWindowWidth } from '@wojtekmaj/react-hooks';
 import { Document, Page } from 'react-pdf';import { pdfjs } from 'react-pdf';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
@@ -28,40 +28,48 @@ const AboutMe = () => {
     const items = [
         {
             id: 0,
-            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet urna quis augue ornare feugiat sit amet sit amet tellus. Fusce eget porttitor diam, a feugiat lectus. Fusce sed nisl tincidunt, hendrerit odio a, venenatis lorem. Sed tincidunt libero ac sapien malesuada tempor. Phasellus libero nibh, convallis vitae pharetra quis, suscipit eu dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec ac tincidunt velit, nec scelerisque ex.",
+            text: "I have used C# extensively in my professional career as a Software Engineer. Currently, at WiseTech Global, around 90% of the code I write is in C#. I have worked with C# for over 5 years developing a deep understanding and gaining significant knowledge in the language. ",
             icon: <SiCsharp className="skill-icon"/>
         },
         {
-            id: 1,text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet urna quis augue ornare feugiat sit amet sit amet tellus. Fusce eget porttitor diam, a feugiat lectus. Fusce sed nisl tincidunt, hendrerit odio a, venenatis lorem. Sed tincidunt libero ac sapien malesuada tempor. Phasellus libero nibh, convallis vitae pharetra quis, suscipit eu dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec ac tincidunt velit, nec scelerisque ex.",
+            id: 1,
+            text: "I have used SQL for professional, academic and personal use. Professionally, I have written large and complex SQL queries to gather and organise data to insert into reports. I have also worked on SQL query optimisation to improve the performance of several queries and improve our product. Academically, I have used SQL as the database for websites and apps that I have developed for my university subjects.",
             icon: <AiFillDatabase className="skill-icon"/>
         },
         {
-            id: 2,text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet urna quis augue ornare feugiat sit amet sit amet tellus. Fusce eget porttitor diam, a feugiat lectus. Fusce sed nisl tincidunt, hendrerit odio a, venenatis lorem. Sed tincidunt libero ac sapien malesuada tempor. Phasellus libero nibh, convallis vitae pharetra quis, suscipit eu dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec ac tincidunt velit, nec scelerisque ex.",
+            id: 2,
+            text: "I have used Python extensively for personal and academic use. My Data Analytics submajor exposed me heavily to Python and I used it to create Convolutional Neural Networks and Image Classification Algorithms. I have also used it to develop personal tools that I use frequently to help with tasks.",
             icon: <SiPython className="skill-icon"/>
         },
         {
-            id: 3,text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet urna quis augue ornare feugiat sit amet sit amet tellus. Fusce eget porttitor diam, a feugiat lectus. Fusce sed nisl tincidunt, hendrerit odio a, venenatis lorem. Sed tincidunt libero ac sapien malesuada tempor. Phasellus libero nibh, convallis vitae pharetra quis, suscipit eu dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec ac tincidunt velit, nec scelerisque ex.",
+            id: 3,
+            text: "I used JavaScript at WiseTech Global to create the front-end of an internal company website. This website also was also made using significantly JavaScript. ",
             icon: <DiJavascript1 className="skill-icon"/>
         },
         {
-            id: 4,text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet urna quis augue ornare feugiat sit amet sit amet tellus. Fusce eget porttitor diam, a feugiat lectus. Fusce sed nisl tincidunt, hendrerit odio a, venenatis lorem. Sed tincidunt libero ac sapien malesuada tempor. Phasellus libero nibh, convallis vitae pharetra quis, suscipit eu dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec ac tincidunt velit, nec scelerisque ex.",
+            id: 4,
+            text: "I used React to develop the front-end of an internal company website that is used by hundreds of developers daily at WiseTech Global, this involved using a full React, node.js, C# and SQL stack. I have also used React extensively in university Software Studio subjects to create different websites. In addition, this website was built using React.",
             icon: <SiReact className="skill-icon"/>
         },
         {
-            id: 5,text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet urna quis augue ornare feugiat sit amet sit amet tellus. Fusce eget porttitor diam, a feugiat lectus. Fusce sed nisl tincidunt, hendrerit odio a, venenatis lorem. Sed tincidunt libero ac sapien malesuada tempor. Phasellus libero nibh, convallis vitae pharetra quis, suscipit eu dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec ac tincidunt velit, nec scelerisque ex.",
+            id: 5,
+            text: "I have used C and C++ to develop and create embedded systems used for Robotics and Sensing, Actuation and Control. I have experience with graphics libraries in C++ such as SFML as well. C++ was the first language I learned.",
             icon: <SiCplusplus className="skill-icon"/>
         },
         {
-            id: 6,text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet urna quis augue ornare feugiat sit amet sit amet tellus. Fusce eget porttitor diam, a feugiat lectus. Fusce sed nisl tincidunt, hendrerit odio a, venenatis lorem. Sed tincidunt libero ac sapien malesuada tempor. Phasellus libero nibh, convallis vitae pharetra quis, suscipit eu dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec ac tincidunt velit, nec scelerisque ex.",
+            id: 6,
+            text: "I have used Java significantly to develop Android applications. I have used it for some personal projects and also university projects. I have significant experience with Java.",
             icon: <SiJava className="skill-icon"/>
         },
         {
-            id: 7,text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet urna quis augue ornare feugiat sit amet sit amet tellus. Fusce eget porttitor diam, a feugiat lectus. Fusce sed nisl tincidunt, hendrerit odio a, venenatis lorem. Sed tincidunt libero ac sapien malesuada tempor. Phasellus libero nibh, convallis vitae pharetra quis, suscipit eu dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec ac tincidunt velit, nec scelerisque ex.",
-            icon: <SiC className="skill-icon"/>
+            id: 7,
+            text: "I have created many Android applications both for university and for personal use. I started learning android development more than five years ago. Since then I have developed an extensive knowledge regarding Android development.",
+            icon: <DiAndroid className="skill-icon"/>
         },
         {
-            id: 8,text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet urna quis augue ornare feugiat sit amet sit amet tellus. Fusce eget porttitor diam, a feugiat lectus. Fusce sed nisl tincidunt, hendrerit odio a, venenatis lorem. Sed tincidunt libero ac sapien malesuada tempor. Phasellus libero nibh, convallis vitae pharetra quis, suscipit eu dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec ac tincidunt velit, nec scelerisque ex.",
-            icon: <SiCsharp className="skill-icon"/>
+            id: 8,
+            text: "I have extensive knowledge with version control systems such as Git, Team Foundation Server (TFS) and Azure. I use Git and Azure almost daily professionally and before that I used TFS.",
+            icon: <AiFillGithub className="skill-icon"/>
         },
     ]
 
@@ -71,9 +79,15 @@ const AboutMe = () => {
             <div className="flex-column center-div base-text">
                 <div className="about-me-container center-div base-text">
                     <div className="about-me-text-container">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet urna quis augue ornare feugiat sit amet sit amet tellus. Fusce eget porttitor diam, a feugiat lectus. Fusce sed nisl tincidunt, hendrerit odio a, venenatis lorem. Sed tincidunt libero ac sapien malesuada tempor. Phasellus libero nibh, convallis vitae pharetra quis, suscipit eu dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec ac tincidunt velit, nec scelerisque ex.</p>
+                        <p>Hi, my name is Venkata Bommireddipalli and I'm a Software Engineer working at WiseTech Global. I am also a uni student in my 5th and final year enrolled in the Bachelor of Engineering (Hon.), Majoring in Software, with a Diploma in Professional Engineering Practice. In addition, I have completed my submajor in Data Analytics focusing more on the Machine Learning/Artificial Intelligence subjects.</p>
                         <br/>
-                        <p>Maecenas semper nisi sed lobortis condimentum. Vestibulum imperdiet dui non elementum semper. Nam ornare ac augue sit amet ornare. Donec luctus consectetur consectetur. Vestibulum ante quam, dignissim sed sem sed, eleifend scelerisque erat. Sed et dignissim urna. Donec quis diam tortor. Suspendisse potenti. Ut viverra, diam ac ultricies blandit, ante nunc congue orci, accumsan laoreet felis odio et mi. In hac habitasse platea dictumst. Cras lacinia fringilla viverra. Quisque nulla neque, hendrerit quis ipsum ut, faucibus bibendum odio. Aenean faucibus rhoncus lacus, vitae volutpat tellus vulputate facilisis. Etiam sed risus dui. Nunc tincidunt vulputate efficitur.</p>
+                        <p>I am a passionate and determined individual that has extensive professional experience developing and maintaining a range of projects such as an internal company website (using a full react, node.js, C# and SQL stack) as well as Enterprise Level Applications used by hundreds of companies.</p>
+                        <br/>
+                        <p>Throughout my studies at university I have had the opportunity to work on various different projects including; developing Android apps and websites, and creating Neural Networks for Objected Detection and Classification. I am currently doing my Capstone Project: Underwater Coral Detection and Classification Using Deep Learning.</p>
+                        <br/>
+                        <p>My professional and academic experiences have allowed me to gain a significant amount of experience in a vast variety of technologies, frameworks and languages. My knowledge extends to; web, Enterprise Software, Android and Machine Learning development. </p>
+                        <br/>
+                        <p>I enjoy working on challenging tasks and don't mind using various different technologies to create a solution. I am open to working with, and learning new frameworks, technologies or languages and am an enthusiastic learner. If you want to work with me, please contact me.</p>
                     </div>
                     <div className="about-me-interactive-container">
                         <p className="info-text">Click icons to expand.</p>
