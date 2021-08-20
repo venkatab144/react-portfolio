@@ -64,7 +64,7 @@ const AcademicExperience = () => {
                                 <h1 className="grid-item">Capstone</h1>
                                 <p className="grid-item">Underwater Coral Detection and Classification Using Deep Learning</p>
                                 <h1 className="grid-item">WAM</h1>
-                                <p className="grid-item">75.37 - Distinction Average</p>
+                                <p className="grid-item">78.37 - Distinction Average</p>
                                 <h1 className="grid-item">Subjects</h1>
                                 <Popup modal lockScroll={true} trigger={<p className="grid-item clickable">Click to View Subjects</p>} position="right center">
                                     <motion.div initial={{opacity:0, scaleX:0}} animate={{opacity:1, scaleX:1}} exit={{opacity:0, scaleX:0}}>
