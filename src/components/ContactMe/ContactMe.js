@@ -20,7 +20,7 @@ const ContactMe = () => {
                         </div>
                         <input className="text-input subject-text base-text" type="text" placeholder="Subject"/>
                         <textarea className="text-input subject-text base-text" type="text" placeholder="Message" style={{resize:'vertical'}}/>
-                        <button className="clickable submit-button base-button base-text" type="submit">Send</button>
+                        <button className="clickable submit-button base-button base-text" type="submit">Send (Doesn't do anything yet)</button>
                     </form>
                 </Paper>
             </div>
