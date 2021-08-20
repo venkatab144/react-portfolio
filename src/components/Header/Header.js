@@ -6,17 +6,33 @@ import React from "react";
 import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { Link } from 'react-scroll'
 
 const Header = () => {
     
   const [index, setIndex] = React.useState(0);
 
-  const icons = [<AiFillGithub className="social-link-icon"/>, <FaLinkedin className="social-link-icon"/>, <MdEmail className="social-link-icon"/>]
+  const icons = [
+    <AiFillGithub 
+      onClick={(e) => {
+        e.preventDefault(); 
+        window.location.href='https://github.com/venkatab144'; 
+      }} 
+      className="clickable social-link-icon"/>, 
+    <FaLinkedin  
+      onClick={(e) => {
+        e.preventDefault(); 
+        window.location.href='https://www.linkedin.com/in/venkata-bommireddipalli-9a31a9aa/'; 
+      }} 
+      className="clickable social-link-icon"/>,
+    <Link className="social-link-link center-div clickable" to="contact-link" spy={true} smooth={true} offset={-40} duration={1000}>
+      <MdEmail className="clickable social-link-icon"/>
+    </Link>]
 
   React.useEffect(() => {
     const intervalId = setInterval(() =>
       setIndex(index => index + 1),
-      2000 // every 3 seconds
+      2000 // every 2 seconds
     );
     return () => clearTimeout(intervalId);
   }, []);

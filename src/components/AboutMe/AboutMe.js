@@ -2,7 +2,7 @@ import React from 'react'
 import './AboutMe.css'
 import { useState } from "react";
 import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
-import { SiCsharp, SiPython, SiCplusplus, SiReact, SiJava, SiC } from "react-icons/si";
+import { SiCsharp, SiPython, SiCplusplus, SiReact, SiJava } from "react-icons/si";
 import { AiFillDatabase, AiFillGithub } from "react-icons/ai";
 import { DiJavascript1, DiAndroid } from "react-icons/di";
 import { useWindowWidth } from '@wojtekmaj/react-hooks';
