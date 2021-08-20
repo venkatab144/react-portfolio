@@ -57,8 +57,12 @@ const AcademicExperience = () => {
                                 <p className="grid-item">University of Technology Sydney</p>
                                 <h1 className="grid-item">Course</h1>
                                 <p className="grid-item">Bachelor of Engineering (Hon.) Diploma in Professional Engineering Practice</p>
+                                <h1 className="grid-item">Submajor</h1>
+                                <p className="grid-item">Data Analytics</p>
                                 <h1 className="grid-item">Year</h1>
                                 <p className="grid-item">Final Year (5th)</p>
+                                <h1 className="grid-item">Capstone</h1>
+                                <p className="grid-item">Underwater Coral Detection and Classification Using Deep Learning</p>
                                 <h1 className="grid-item">WAM</h1>
                                 <p className="grid-item">78.37 - Distinction Average</p>
                                 <h1 className="grid-item">Subjects</h1>
@@ -84,8 +88,14 @@ const AcademicExperience = () => {
                         </div>
                     </Paper>
                 </div>
-                <div className="academic-experience-text-container">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet urna quis augue ornare feugiat sit amet sit amet tellus. Fusce eget porttitor diam, a feugiat lectus. Fusce sed nisl tincidunt, hendrerit odio a, venenatis lorem. Sed tincidunt libero ac sapien malesuada tempor. Phasellus libero nibh, convallis vitae pharetra quis, suscipit eu dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec ac tincidunt velit, nec scelerisque ex.</p>
+                <div className="academic-experience-text-container flex-column">
+                    <p>I am currently attending the University of Technology Sydney and am in my 5th and final year enrolled in the Bachelor of Engineering (Hon.), Majoring in Software, with a Diploma in Professional Engineering Practice. While studying at university, I've had the opportunity to work on various projects ranging from; Websites, Android Apps and Java Applications to Convolutional Neural Networks and Image Classification Algorithms.</p>
+                    <br/>
+                    <p>I have created various Android applications and websites for my Software Studio classes using a variety of different frameworks. I've used React, JavaScript, C# and MongoDB to develop different these websites as well as the Nunit framework to unit test them. These websites ranged from task tracking websites to event scheduling website mockups for UTS. I have also developed Android applications using Java and XML in Android Studio. Apps that I have created include: Health Tracker and Fitness apps.</p>
+                    <br/>
+                    <p>I did my submajor in Data Analytics, and focused on machine learning subjects such as: Deep Learning and Convolutional Neural Networks, Machine Learning and Image Processing and Pattern Recognition. I used Python and Google Colab extensively to create these neural networks as well as to create tools to pre-process the data.</p>
+                    <br/>
+                    <p>My Capstone Project is: Underwater Coral Detection and Classification Using Deep Learning. It involves the creation of a machine learning model that will be used to classify various coral species from a video feed. This program will classify the species as well as the coral health and identify which coral needs future restoration work.</p>
                 </div>
             </div>
         </div>

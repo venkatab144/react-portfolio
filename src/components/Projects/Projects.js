@@ -9,7 +9,7 @@ const Projects = () => {
             <h1 className="base-text section-header-text center-text">Projects</h1>
             <div className="projects-container flex-column base-text">
                 <div className="projects-text-container">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet urna quis augue ornare feugiat sit amet sit amet tellus. Fusce eget porttitor diam, a feugiat lectus. Fusce sed nisl tincidunt, hendrerit odio a, venenatis lorem. Sed tincidunt libero ac sapien malesuada tempor. Phasellus libero nibh, convallis vitae pharetra quis, suscipit eu dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec ac tincidunt velit, nec scelerisque ex.</p>
+                    <p>Throughout my professional career and academic studies I have worked on various different projects using a wide variety of frameworks, technologies and languages. Below are some of projects that I have worked on over the years.</p>
                 </div>
                 <AnimateSharedLayout>
                     <motion.div className="projects-expanding-div-container" layout><ExpandingDiv info={AcademicProjects}/></motion.div>
