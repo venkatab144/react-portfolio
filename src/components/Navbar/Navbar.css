@@ -49,7 +49,7 @@
     display: none;
 }
 
-@media screen and (max-width: 963px){
+@media screen and (max-width: 1225px){
     .navbar-content-container {
         display: none;
     }

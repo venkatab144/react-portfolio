@@ -23,7 +23,7 @@ const Navbar = () => {
     return (
         <div>
             <div className={showMenu ? "touch-detector" : undefined} onMouseDown={onOutsideTouchInteraction} onTouchStart={onOutsideTouchInteraction}></div>
-            <div className={width > 963 ? "navbar-container" : showMenu ? "navbar-container expanded" : "navbar-container"} onClick={toggleMenu}>
+            <div className={width > 1225 ? "navbar-container" : showMenu ? "navbar-container expanded" : "navbar-container"} onClick={toggleMenu}>
                 <NavbarContent />
 
                 {showMenu && <NavbarContent smallMenu={true}/>}
