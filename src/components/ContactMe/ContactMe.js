@@ -55,11 +55,11 @@ const ContactMe = () => {
                 <Paper elevation={3} className="contact-paper">
                     <form onSubmit={onSubmit} className="flex-column">
                         <div className="name-email-container flex-row">
-                            <input className="text-input base-text" type="text" name="from_name" placeholder="Name"/>
+                            <input className="text-input base-text" type="text" name="from_name" placeholder="Name" required/>
                             <input className="text-input base-text" type="email" name="from_email" placeholder="Email"/>
                         </div>
                         <input className="text-input subject-text base-text" type="text" name="subject" placeholder="Subject"/>
-                        <textarea className="text-input subject-text base-text" type="text" name="message" placeholder="Message" style={{resize:'vertical'}}/>
+                        <textarea className="text-input subject-text base-text" type="text" name="message" placeholder="Message" style={{resize:'vertical'}} required/>
                         <button className="clickable submit-button base-button base-text" type="submit">Send</button>
                     </form>
                 </Paper>
