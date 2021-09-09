@@ -6,6 +6,7 @@ import ProfessionalExperience from './components/ProfessionalExperience/Professi
 import Projects from './components/Projects/Projects';
 import Navbar from './components/Navbar/Navbar';
 import ContactMe from './components/ContactMe/ContactMe';
+import Research from './components/Research/Research';
 
 function App() {
   return (
@@ -17,9 +18,8 @@ function App() {
         <ProfessionalExperience />
         <AcademicExperience />
         <Projects />
+        <Research />
         <ContactMe />
-        {/*Contact
-        Footer */}
       </div>
     </div>
   );
