@@ -1,16 +1,48 @@
 import './ContactMe.css'
 import Paper from '@material-ui/core/Paper';
 import emailjs from 'emailjs-com';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const ContactMe = () => {
     const onSubmit = (e) => {
         e.preventDefault();
 
+        toast.info('Sending Email', {
+            position: "bottom-right",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark"
+            });
+
         emailjs.sendForm(process.env.REACT_APP_EMAIL_SERVICE_ID, process.env.REACT_APP_EMAIL_TEMPLATE_ID, e.target, process.env.REACT_APP_EMAIL_USER_ID)
             .then((result) => {
-                console.log(result.text)
+                toast.success('Successfully Sent', {
+                    position: "bottom-right",
+                    autoClose: 3000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "dark"
+                    });
             }, (error) => {
-                console.log(error.text)
+                toast.error('Error sending email, please instead contact me at venkatab144@gmail.com', {
+                    position: "bottom-right",
+                    autoClose: 9000,
+                    hideProgressBar: false,
+                    closeOnClick: false,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "dark"
+                    });
+                console.log("TEST")
             })
 
         return;
@@ -32,6 +64,7 @@ const ContactMe = () => {
                     </form>
                 </Paper>
             </div>
+            <ToastContainer />
         </div>
     )
 }
