@@ -5,7 +5,7 @@ import { MdEmail } from "react-icons/md";
 import { Link } from 'react-scroll'
 import { motion } from "framer-motion";
 
-const SocialLinks = () => {
+const SocialLinks = ({ absolute, animate }) => {
   const icons = [
       <AiFillGithub 
         onClick={(e) => {
@@ -46,11 +46,11 @@ const SocialLinks = () => {
   };
 
     return (
-        <div className="social-link-container">
+        <div className={"social-link-container" + (absolute && " pos-absolute") }>
           <motion.ul
               className="social-link-ul"
               variants={container}
-              initial="hidden"
+              initial={animate ? "hidden" : "visible"}
               animate="visible"
             >
               {[0, 1, 2].map((index) => (

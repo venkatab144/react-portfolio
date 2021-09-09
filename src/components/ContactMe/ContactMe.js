@@ -3,6 +3,7 @@ import Paper from '@material-ui/core/Paper';
 import emailjs from 'emailjs-com';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import SocialLinks from '../SocialLinks/SocialLinks';
 
 const ContactMe = () => {
     const onSubmit = (e) => {
@@ -52,7 +53,7 @@ const ContactMe = () => {
         <div className="page-container" id="contact-link">
             <h1 className="base-text section-header-text center-text">Contact Me</h1>
             <div className="contact-me-container flex-column base-text">
-                <Paper elevation={3} className="contact-paper">
+                <Paper elevation={3} className="contact-paper center-div">
                     <form onSubmit={onSubmit} className="flex-column">
                         <div className="name-email-container flex-row">
                             <input className="text-input base-text" type="text" name="from_name" placeholder="Name" required/>
@@ -62,6 +63,7 @@ const ContactMe = () => {
                         <textarea className="text-input subject-text base-text" type="text" name="message" placeholder="Message" style={{resize:'vertical'}} required/>
                         <button className="clickable submit-button base-button base-text" type="submit">Send</button>
                     </form>
+                    <SocialLinks absolute={false} animate={false}/>
                 </Paper>
             </div>
             <ToastContainer />

@@ -44,6 +44,10 @@
   color: #d8d8d8;
 }
 
+.pos-absolute {
+  position: absolute;
+}
+
 .center-div {
   display: flex;
   justify-content: center;

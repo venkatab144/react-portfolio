@@ -82,7 +82,7 @@ const Header = () => {
           <p className="base-text center-text header-sub-text">developer.</p>
         </motion.div>
       </div>
-      <SocialLinks />
+      <SocialLinks absolute={true} animate={true}/>
     </div>
     )
 }
