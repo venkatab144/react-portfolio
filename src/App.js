@@ -7,6 +7,7 @@ import Projects from './components/Projects/Projects';
 import Navbar from './components/Navbar/Navbar';
 import ContactMe from './components/ContactMe/ContactMe';
 import Research from './components/Research/Research';
+import Leadership from './components/Leadership/Leadership';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <AcademicExperience />
         <Projects />
         <Research />
+        <Leadership />
         <ContactMe />
       </div>
     </div>
