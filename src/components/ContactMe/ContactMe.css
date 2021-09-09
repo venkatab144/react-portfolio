@@ -76,7 +76,7 @@ input:-webkit-autofill:active
 
 @media screen and (max-width: 540px){
     .text-input {
-        width: 240px;
+        width: 265px;
         font-size: 10px;
         transition: 0.8s all ease;
     }
@@ -87,7 +87,7 @@ input:-webkit-autofill:active
     }
 
     .subject-text {
-        width: 240px;
+        width: 265px;
         transition: 0.8s all ease;
     }
 }
