@@ -23,7 +23,7 @@ const Navbar = () => {
     return (
         <div>
             <div className={showMenu ? "touch-detector" : undefined} onMouseDown={onOutsideTouchInteraction} onTouchStart={onOutsideTouchInteraction}></div>
-            <div className={width > 963 ? "navbar-container" : showMenu ? "navbar-container expanded" : "navbar-container"} onClick={toggleMenu}>
+            <div className={width > 1225 ? "navbar-container" : showMenu ? "navbar-container expanded" : "navbar-container"} onClick={toggleMenu}>
                 <NavbarContent />
 
                 {showMenu && <NavbarContent smallMenu={true}/>}
@@ -48,6 +48,8 @@ function NavbarContent({ smallMenu }) {
         <NavbarItem smallMenu={smallMenu} text={"PROFESSIONAL EXPERIENCE"} linkId={"prof-exp-link"}/>
         <NavbarItem smallMenu={smallMenu} text={"ACADEMIC EXPERIENCE"} linkId={"academic-exp-link"}/>
         <NavbarItem smallMenu={smallMenu} text={"PROJECTS"} linkId={"projects-link"}/>
+        <NavbarItem smallMenu={smallMenu} text={"RESEARCH"} linkId={"research-link"}/>
+        <NavbarItem smallMenu={smallMenu} text={"LEADERSHIP"} linkId={"leadership-link"}/>
         <NavbarItem smallMenu={smallMenu} text={"CONTACT ME"} linkId={"contact-link"}/>
       </div>
     );
