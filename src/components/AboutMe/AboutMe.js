@@ -145,7 +145,7 @@ function Item({ childIdent, onChildOpen, openChild, icon, text }) {
           <div>
             <Document className="pdf-doc flex-row"
                 file="./Resume.pdf">
-                <Page width={width > 1300 ? Math.min(width * 0.4, 800) : Math.min(width * 0.9, 800)} className="pdf-page" pageNumber={1} />
+                <Page width={width > 1300 ? Math.min(width * 0.6, 800) : Math.min(width * 0.9, 800)} className="pdf-page" pageNumber={1} />
             </Document>
           </div>
       )
