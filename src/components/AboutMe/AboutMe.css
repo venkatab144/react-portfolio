@@ -116,3 +116,10 @@
         transition: 0.8s all ease;
     }
 }
+
+@media screen and (max-width: 500px){
+    .base-button {
+        font-size: 12px;
+        transition: 0.8s all ease;
+    }
+}
