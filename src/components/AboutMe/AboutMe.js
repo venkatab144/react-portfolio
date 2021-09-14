@@ -101,7 +101,7 @@ const AboutMe = () => {
                     </div>
                 </div>
                 <div className="flex-column center-div">
-                    <div>
+                    <div className="center-div">
                         <button onClick={() => setShowResume(!showResume)} className="clickable base-button base-text">{showResume ? 'Close' : 'View Resume'}</button>
                         <button className="base-button base-text"><a className="base-text" href='./Resume.pdf' download>Download Resume (Click Text)</a></button>
                     </div>
@@ -145,8 +145,7 @@ function Item({ childIdent, onChildOpen, openChild, icon, text }) {
           <div>
             <Document className="pdf-doc flex-row"
                 file="./Resume.pdf">
-                <Page width={width > 1300 ? Math.min(width * 0.4, 800) : Math.min(width * 0.7, 800)} className="pdf-page" pageNumber={1} />
-                <Page width={width > 1300 ? Math.min(width * 0.4, 800) : Math.min(width * 0.7, 800)} className="pdf-page" pageNumber={2} />
+                <Page width={width > 1300 ? Math.min(width * 0.6, 800) : Math.min(width * 0.9, 800)} className="pdf-page" pageNumber={1} />
             </Document>
           </div>
       )
